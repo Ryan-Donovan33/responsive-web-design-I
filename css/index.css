@@ -162,6 +162,10 @@ nav {
 	margin-top: 20px;
 }
 
+.alt-view {
+	display: none;
+}
+
 nav a {
 	display: flex;
 	text-decoration: none;
@@ -258,6 +262,19 @@ footer {
 		margin: 5%;
 		padding: 2%;
 	}
+
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	/* .alt-view {
+		display: flex;
+	} */
+	/* 
+	nav img {
+		display: none;
+	} */
 
 	.middle {
 		padding: 3%;
