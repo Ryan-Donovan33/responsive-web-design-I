@@ -150,20 +150,15 @@ h5 {
 	margin-bottom: 15px;
 }
 
-.top-content {
+.Top-Content {
 	display: flex;
-	justify-content: center;
-	flex-direction: row;
+	justify-content: flex-start;
 }
 
 nav {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 20px;
-}
-
-.alt-view {
-	display: none;
+	width: 80%;
 }
 
 nav a {
@@ -263,18 +258,16 @@ footer {
 		padding: 2%;
 	}
 
-	nav {
+	.Top-Content {
 		display: flex;
 		flex-direction: column-reverse;
+		align-items: center;
 	}
 
-	/* .alt-view {
-		display: flex;
-	} */
-	/* 
-	nav img {
-		display: none;
-	} */
+	.Top-Content div {
+		padding: 2%;
+		margin: 2%;
+	}
 
 	.middle {
 		padding: 3%;
@@ -290,13 +283,6 @@ footer {
 		flex-direction: column;
 		padding: 2%;
 		margin: 2%;
-	}
-
-	nav img {
-		order: -1;
-		border-bottom: 1px solid grey;
-		width: 100%;
-		padding: 8%;
 	}
 
 	nav a {
