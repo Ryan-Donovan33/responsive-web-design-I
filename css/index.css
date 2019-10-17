@@ -272,15 +272,63 @@ footer {
 	nav {
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		padding: 2%;
+		margin: 2%;
 	}
 
 	nav img {
 		order: -1;
+		border-bottom: 1px solid grey;
+		padding: 2%;
 	}
 
 	nav a {
 		margin: 2%;
 		padding: 2%;
 		border-bottom: 1px solid grey;
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding: 1%;
+		margin: 1%;
+	}
+
+	.middle div {
+		width: 80%;
+		margin-top: 3%;
+	}
+
+	.bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.bottom .bottom-section {
+		width: 80%;
+		margin-top: 2%;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 7%;
+		padding: 5%;
 	}
 }
