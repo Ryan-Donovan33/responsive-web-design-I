@@ -247,12 +247,120 @@ footer {
 	padding: 5%;
 }
 
+.services-header-img {
+	width: 100%;
+	height: auto;
+	padding: 30px;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	padding: 2%;
+	align-content: flex-start;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.service-type {
+	margin: 25px 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	padding: 5px;
+}
+
+.service-type div {
+	width: 46%;
+	height: auto;
+	margin: 2%;
+	padding: 1%;
+	border: 1px solid black;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	background-color: #f0f0f0;
+	align-content: flex-start;
+	justify-content: space-around;
+}
+
+.service-type div h3 {
+	margin: 5px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.service-type div p {
+	margin: 5px;
+	padding: 5px;
+}
+
+.button {
+	margin: 5px;
+	padding: 10px;
+	width: 150px;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+}
+
+.service-facts {
+	display: flex;
+	border-top: 2px solid black;
+}
+
+.service-facts div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 20px;
+	margin: 5px;
+}
+
+.service-facts div h3 {
+	margin: 5px;
+	font-size: 20px;
+}
+
+.service-facts div p {
+	margin: 5px;
+	padding: 5px;
+}
+
+ul {
+	list-style-type: circle;
+	list-style-position: inside;
+	padding: 5px;
+	line-height: 25px;
+}
+
+.services-info-img {
+	padding: 20px;
+	margin: 2%;
+	width: 50%;
+	height: auto;
+}
+
 /* For Tablet Breakpoint 800px */
 
 @media (max-width: 800px) {
 	.circle-img {
 		display: none;
 	}
+
+	.services-header-img {
+		display: none;
+	}
+
+	.services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 5%;
+	}
+
 	header {
 		margin: 5%;
 		padding: 2%;
@@ -276,8 +384,13 @@ footer {
 	.bottom {
 		padding: 3%;
 	}
+
+	.services-info-img {
+		display: none;
+	}
 }
 
+/* For Mobile Break @ 500px */
 @media (max-width: 500px) {
 	nav {
 		flex-direction: column;
@@ -315,6 +428,16 @@ footer {
 	.middle div {
 		width: 80%;
 		margin-top: 3%;
+	}
+
+	.service-type {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.service-type div {
+		width: 90%;
+		align-items: center;
 	}
 
 	.bottom {
